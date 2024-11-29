@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="bigbike.css">
     <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
     <title>Zamero Shop</title>
 </head>
@@ -13,11 +14,11 @@
     <ul>
         <li><a href="homepage.html">Home</a></li>
         <li><a href="bigbikepage.html">Bigbike</a></li>
-        <li><a href="#scooter">Scooter</a></li>
+        <li><a href="scooter.html">Scooter</a></li>
         <li><a href="helmetpage.html">Helmet</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a class="active" href="Login.html">Login</a></li>
+        <li><a class="active" href="index.html">Login</a></li>
         <h1 style="color: white; text-align: center; margin-top: 15px;">Zamero Shop</h1>
     </ul>
 
@@ -44,6 +45,7 @@
 
     <div class="row">
         <div class="column">
+            <a href="gsx8r.html" class="motorcycle-link">
             <div class="motorcycle-container">
                 <img class="motorcycle-img" src="gsx-8r-png.webp" alt="gsx-8r">
                 <p class="motorcycle-title">SUZUKI GSX-8R</p>
@@ -56,9 +58,11 @@
                     SRP: ₱699,000
                 </p>
             </div>
+        </a>
         </div>
 
         <div class="column">
+            <a href="HAYABUSA.html" class="motorcycle-link">
             <div class="motorcycle-container">
                 <img class="motorcycle-img" src="Hayabusa.png" alt="Hayabusa">
                 <p class="motorcycle-title">SUZUKI HAYABUSA</p>
@@ -71,9 +75,11 @@
                     SRP: ₱1,225,000
                 </p>
             </div>
+        </a>
         </div>
 
         <div class="column">
+            <a href="s1000gt.html" class="motorcycle-link">
             <div class="motorcycle-container">
                 <img class="motorcycle-img" src="gsx-s1000gt.webp" alt="gsx-1000gt">
                 <p class="motorcycle-title">SUZUKI GSX-S1000GT</p>
@@ -86,6 +92,7 @@
                     SRP: ₱815,000
                 </p>
             </div>
+        </a>
         </div>
     </div>
 
@@ -108,6 +115,7 @@
 
     <div class="row">
         <div class="column">
+            <a href="mio125.html" class="motorcycle-link">
             <div class="motorcycle-container">
                 <img class="motorcycle-img" src="yamaha_mio_125.webp" alt="yamaha_mio_125">
                 <p class="motorcycle-title">YAMAHA MIO 125S</p>
@@ -120,10 +128,11 @@
                     SRP: ₱80,900
                 </p>
             </div>
-            
+        </a>
         </div>
 
         <div class="column">
+            <a href="yamaha_aerox.html" class="motorcycle-link">
             <div class="motorcycle-container">
                 <img class="motorcycle-img" src="mio_aerox.jpg" alt="Yamaha Mio Aerox">
                 <p class="motorcycle-title">YAMAHA MIO AEROX</p>
@@ -136,10 +145,11 @@
                     SRP: ₱124,900
                 </p>
             </div>
-            
+        </a>
         </div>
 
         <div class="column">
+            <a href="hondabeat_playful.webp" class="motorcycle-link">
             <div class="motorcycle-container">
                 <img class="motorcycle-img" src="PCX4-300x235.jpg" alt="Honda PCX 160">
                 <p class="motorcycle-title">HONDA PCX 160</p>
@@ -152,7 +162,7 @@
                     SRP: ₱133,900
                 </p>
             </div>
-            
+        </a>
         </div>
     </div>
 
@@ -160,6 +170,7 @@
 
 <div class="row">
     <div class="column">
+        <a href="glamster.html" class="motorcycle-link">
         <div class="helmet-container">
             <img class="helmet-img" src="ShoeiGlamsterWhite_01.webp" alt="SHOEI Glamster Helmet">
             <p class="helmet-title">SHOEI GLAMSTER MOTORCYCLE FULL FACE HELMET</p>
@@ -169,10 +180,12 @@
                 Price: ₱35,000
             </p>
         </div>
+    </a>
     </div>
     
 
     <div class="column">
+        <a href="x552.html" class="motorcycle-link">
         <div class="helmet-container">
             <img class="helmet-img" src="NOLAN_X-552_Ultra_puro_02.webp" alt="SNOLAN X-552 ULTRA CARBON PURO MOTARD HELMET">
             <p class="helmet-title">SNOLAN X-552 ULTRA CARBON PURO MOTARD HELMET</p>
@@ -182,10 +195,12 @@
                 Price: ₱22,500
             </p>
         </div>
+        </a>
     </div>
     
 
     <div class="column">
+        <a href="gtair2.html" class="motorcycle-link">
         <div class="helmet-container">
             <img class="helmet-img" src="SHOEINOTCHTC-1_2.webp" alt="SHOEI GT-AIR 2 Notch Helmet">
             <p class="helmet-title">SHOEI GT-AIR 2 NOTCH HELMET</p>
@@ -195,6 +210,7 @@
                 Price: ₱27,000
             </p>
         </div>
+    </a>
     </div>
     
 </div>
@@ -202,30 +218,30 @@
     
     
 
-    <script>
-        function initSlideshow(slideshowId) {
-            let slideIndex = 0;
-            const slides = document.querySelectorAll(`#${slideshowId} .slides`);
-            const totalSlides = slides.length;
-        
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    slide.style.display = i === index ? "block" : "none";
-                });
-            }
-        
-            function nextSlide() {
-                slideIndex = (slideIndex + 1) % totalSlides;
-                showSlide(slideIndex);
-            }
-        
-            showSlide(slideIndex);
-            setInterval(nextSlide, 3000); 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function initSlideshow(slideshowId) {
+        let $slides = $(`#${slideshowId} .slides`);
+        let slideIndex = 0;
+        const totalSlides = $slides.length;
+
+        function showSlide(index) {
+            $slides.hide().eq(index).fadeIn();
         }
-        
-        
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            showSlide(slideIndex);
+        }
+
+        showSlide(slideIndex);
+        setInterval(nextSlide, 3000); 
+    }
+
+    $(document).ready(function () {
         initSlideshow("slideshow1");
         initSlideshow("slideshow2");
-        </script>
+    });
+</script>
 </body>
 </html>
